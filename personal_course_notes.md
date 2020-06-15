@@ -1,25 +1,6 @@
-# Machine Learning Specialization. Washington University
-
-- I was curiouos about TuriCreate and Graphlab, so i thought maybe this courses could help to check it out in action and also reinforcing knowledge. Let's give it a try.
 
 
-![alt](pics/intro.png)
-https://www.coursera.org/specializations/machine-learning
-
-
-
-# Graphlab
-
-- It seems to work like pandas but storing info in hard drive instead of memory, also it has its own ml algorithms and displaying tools.
-
-
-![alt](pics/graphlab.png " ")
-![alt](pics/graphlab2.png " ")
-
-
-# Basics
-
-## Classification error and accuracy
+# Classification error and accuracy
 
 - error = (# of mistakes) / (total #) = 1 - accuracy ; error € [0,1], the lowest the better.
 
@@ -30,7 +11,7 @@ What's good accuracy?
 
 For binary classification in a balance dataset half the time it predicts right by default => accuracy = 0.5, so do it better.
 
-- For k classess accuracy = 1/k by default
+- For k classess accuracy = 1/k by default.
 
 Then, is 90% accuracy good? It depends. If 90% of sent emails are spam, just saying all mails are spam you get 90% of accuracy.
 
@@ -40,7 +21,7 @@ Then, is 90% accuracy good? It depends. If 90% of sent emails are spam, just say
     - How does it compare to a simple, baseline approach?
     - What accuracy range do I need? What is good enough?
 
-False positives, false negatives, and confusion matrices
+False positives, false negatives, and confusion matrices.
 
 ------------------------
 
@@ -48,19 +29,19 @@ False positives, false negatives, and confusion matrices
 
 ![alt](pics/classification_example.png)
 
-
+![alt](pics/classification_example2.png)
 
 --------------
 
 **- Precision** = positive predictive value = TP / (TP+FP)
 
-Fraction of relevant instances among retrieved instances
+    - Fraction of relevant instances among retrieved instances.
 
 **- Recall** = sensitivity = TP/ (TP + FN)
 
-Fraction of the total amount of relevant instances that were actually retrieved
+    - Fraction of the total amount of relevant instances that were actually retrieved.
 
-- Example:
+Example:
 
 A ML algorithm identifies 8 dogs in a picture where there are 12 dogs and some cats. Of the identified dogs, 5 are really dogs (TP), and there are 3 cats identified as dogs (FP)
 
@@ -94,10 +75,10 @@ If 98% of samples are type A, our model can easily get 98% of training accuracy,
 
         Actual YES      5               100
 
-- TP    :   predicted YES and actual output was NO
-- TN    :   "      "   NO   "               "   NO
-- FP    :   "      "   YES  "               "   NO
-- FN    :   "      "   NO   "               "   YES
+- TP    :   Predicted YES and actual output was YES.
+- TN    :   Predicted   NO and the actual output was NO.
+- FP    :   Predicted   YES   and the actual output was NO (the prediction is false).
+- FN    :  Predicted NO  and the actual output was  YES.
 
 **- AUC**:
 
@@ -120,3 +101,10 @@ Is the average of the square difference between the Original Values and the Pred
 **- When using each metric**:
 
 https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-models-part-1-a99d7d7414e4
+
+
+# Bias
+
+![alt](pics/bias.png)
+
+- Models with less bias tend to need more data to perform well, but do better with sufficient data.
