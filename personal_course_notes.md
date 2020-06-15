@@ -106,5 +106,4 @@ https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-model
 # Bias
 
 ![alt](pics/bias.png)
-
 - Models with less bias tend to need more data to perform well, but do better with sufficient data.
