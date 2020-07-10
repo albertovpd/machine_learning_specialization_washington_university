@@ -34,3 +34,9 @@ https://www.coursera.org/specializations/machine-learning
 
 ![alt](pics/auc1.png)
 Another: When you know specifically the number of items you have to recoomend, then use it at k==items you have.
+
+
+# NN basics
+
+- NN basic
+![alt](pics/nn_basics1.png)
