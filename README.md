@@ -6,6 +6,7 @@
 ![alt](pics/intro.png)
 https://www.coursera.org/specializations/machine-learning
 
+![alt](pics/course1.png)
 
 
 # Graphlab
