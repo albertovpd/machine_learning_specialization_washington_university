@@ -6,7 +6,18 @@
 ![alt](pics/intro.png)
 https://www.coursera.org/specializations/machine-learning
 
+- 1st course: General approach.
+
 ![alt](pics/course1.png)
+
+- 2nd course: Regression
+
+
+-----------------------
+-----------------------
+
+# **Personal notes:**
+
 
 
 # Graphlab
