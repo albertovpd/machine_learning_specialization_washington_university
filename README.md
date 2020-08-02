@@ -40,6 +40,8 @@ https://www.coursera.org/specializations/machine-learning
 
 ## Regression.
 
+Check out Andrew NG notes.
+
 **1st approach**: Simple regression model
 
 - Fitting curve:
@@ -53,14 +55,46 @@ $$f(x)=w_0 + w_1 x$$
 
 **Residual Sum of Squares RSS:**
 
-$$RSS(w_0,w1)=\sum(y_i-f(x_i))²$$
+$$RSS(w_0,w1)≡\sum(y_i-f(x_i))²$$
 - We are just adding the errors² 
 
-$$\nabla_(w_0,w_1) RSS(w_0,w1)=0$$
-
-In the 2-d plane made by w_0, w_1, the points minimizing this eq are: $$ŵ_0, ŵ_1$$
-
 Finding the best fitting courve means minimizing the RSS (with Matlab could be taking derivatives and job done)
+
+$$\nabla_(w_0,w_1) RSS(w_0,w1)=0$$
+- In the 2-d plane made by w_0, w_1, the points minimizing this eq are: $$ŵ_0, ŵ_1$$
+
+- And then taking the 2nd derivative to check max/minimum
+
+**Numerical way:**  Hill climbing algorithm/ Hill descent:
+
+While not converged:
+
+$$w^(t+1) = w^t  ± \eta  \nabla_w g(w)$$
+
+$$ t = iteration; \eta=stepsize$$ 
+
+$$ + =>  climbing; - =>  descent$$ 
+
+
+$$ \nabla_w  g(w) = \begin{pmatrix} \delta g / \delta w_0 \\ \delta g / \delta w_1 \\ \delta g / \delta w_2 \\ ... \end{pmatrix}$$
+
+When the derivative is positive, we want to decrease *w*, when it's negative, we want to increase it.
+
+**Choosing the stepsize:** Common choices:
+
+- Decrease it with iteration *t*
+
+$$\eta_t=\alpha /t$$ 
+or $$\eta_t=\alpha /sqrt(t)$$ 
+
+
+- Ideally, the steps end when $$\delta g(w) / \delta w =0$$
+
+This is ideal, we can't wait eternally to converge. So we say something like 
+
+$$ |\delta g(w) / \delta w|<\epsilon $$
+
+$$\epsilon ≡ threshold \cdot to \cdot be \cdot set$$ 
 
 
 
