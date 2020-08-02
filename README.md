@@ -47,7 +47,7 @@ Check out Andrew NG notes.
 - Fitting curve:
 <!-- $$f(x)=w_0 + w_1 x$$ --> 
 
-<div align="center"><img src="https://render.githubusercontent.com/render/math?math="></div>
+<div align="center"><img src="svg/EvByxxFyA1.svg"/></div>
 
 - Then, the real points can be described as this fitting curve + error (vertical distance to the fitting curve):
 
