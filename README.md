@@ -31,7 +31,45 @@ https://www.coursera.org/specializations/machine-learning
 ![alt](pics/graphlab2.png " ")
 
 
+----------------------
+-------------------------
+
 # ML course metrics
+
+
+
+## Regression.
+
+**1st approach**: Simple regression model
+
+- Fitting curve:
+$$f(x)=w_0 + w_1 x$$
+
+- Then, the real points can be described as this fitting curve + error (vertical distance to the fitting curve):
+
+ $$y_i=f(x_i)+\epsilon_i$$
+
+- E == expected value (that means it can be above (+) or below (-) the general fitting curve . 
+
+**Residual Sum of Squares RSS:**
+
+$$RSS(w_0,w1)=\sum(y_i-f(x_i))²$$
+- We are just adding the errors² 
+
+$$\nabla_(w_0,w_1) RSS(w_0,w1)=0$$
+
+In the 2-d plane made by w_0, w_1, the points minimizing this eq are: $$ŵ_0, ŵ_1$$
+
+Finding the best fitting courve means minimizing the RSS (with Matlab could be taking derivatives and job done)
+
+
+
+ -----------------
+
+
+## Classification.
+
+
 
 **Classification accuracy** => fraction of items correctly classified.
 
