@@ -6,6 +6,8 @@
 ![alt](pics/intro.png)
 https://www.coursera.org/specializations/machine-learning
 
+![alt](pics/overview.png)
+
 - 1st course: General approach.
 
 ![alt](pics/course1.png)
