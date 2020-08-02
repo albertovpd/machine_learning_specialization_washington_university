@@ -45,7 +45,9 @@ Check out Andrew NG notes.
 **1st approach**: Simple regression model
 
 - Fitting curve:
-$$f(x)=w_0 + w_1 x$$
+<!-- $$f(x)=w_0 + w_1 x$$ --> 
+
+<div align="center"><img src="https://render.githubusercontent.com/render/math?math="></div>
 
 - Then, the real points can be described as this fitting curve + error (vertical distance to the fitting curve):
 
