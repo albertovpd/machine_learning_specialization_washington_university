@@ -23,8 +23,9 @@ $$RSS(w_0,w1)≡\sum(y_i-f(x_i))²$$
 
 Finding the best fitting courve means minimizing the RSS (with Matlab could be taking derivatives and job done)
 
-$$\nabla_(w_0,w_1) RSS(w_0,w1)=0$$
+$$\nabla_(w_0,w_1) RSS(w_0,w1)= \begin{pmatrix} -2 \sum_i ^N [y_i - (w_0+_w1 x_i)] \\ -2 \sum_i ^N [y_i - (w_0+_w1 x_i)] x_i \\  \end{pmatrix} = 0$$
 - In the 2-d plane made by w_0, w_1, the points minimizing this eq are: $$ŵ_0, ŵ_1$$
+
 
 - And then taking the 2nd derivative to check max/minimum
 
