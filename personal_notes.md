@@ -47,8 +47,8 @@ $$\nabla RSS(w)= \nabla (y-Hw)^T (y-Hw) = -2H^T(y-Hw)$$
 
 => algebra & identity properties => $$ŵ=(H^T H)^{-1} H y$$
 
-H invertible <=> N >D (N = number of LD observations, D = number of features). 
-$$H^T H ≈ D^3$$  so, it can be really expensive to compute  and we need to find an alternative => **gradient descent**
+H invertible <=> N >D (N = number of LD observations, D = number of features). Cost of computing:
+$$H^T H ≈ ND^2 + D^3$$  so, it can be really expensive to compute  and we need to find an alternative => **gradient descent**
 
 
 - And then taking the 2nd derivative to check max/minimum
@@ -68,7 +68,7 @@ $$ \nabla_w  g(w) = \begin{pmatrix} \delta g / \delta w_0 \\ \delta g / \delta w
 
 D-dimensional gradient descent:
 
-$$w^(t+1) = w^t  - \eta (-2 \sum _{i=1} ^N h_j (x_i) (y_i - h^T (x_i)w^{(t)}) $$
+$$w^(t+1) = w^t  +2 \eta \sum _{i=1} ^N h_j (x_i) (y_i - h^T (x_i)w^{(t)}) $$
 
 This well explained in Andrew NG course
 
@@ -90,7 +90,7 @@ $$ |\delta g(w) / \delta w|<\epsilon $$
 
 $$\epsilon ≡ threshold \cdot to \cdot be \cdot set$$ 
 
-
+Gradient descent for multiple regression => find the implementation math
 
  -----------------
 
