@@ -6,13 +6,22 @@
 
 Check out Andrew NG notes.
 
-**1st approach**: Simple regression model 
-- Fitting curve:
+**1st approach**: Regression model
+
+Number of observations  (x_i, y_i) ≡ N
+
+Number of inputs x(j) ≡ d
+
+Number of features h_j(x) ≡ D
+
+- Fitting curve (predicted elements):
 $$f(x)=w_0 + w_1 x$$
 
-- Then, the real points can be described as this fitting curve + error (vertical distance to the fitting curve):
+- Then, the real points can be described as this fitting curve + error (vertical distance to the fitting curve) (sum for multiple regression):
 
- $$y_i=f(x_i)+\epsilon_i$$
+ $$y_i= \sum _j ^D f(x_i)+\epsilon_i$$
+
+ Algebra. Transposed vectors por scalar product.
 
 - E == expected value (that means it can be above (+) or below (-) the general fitting curve . 
 
@@ -21,10 +30,25 @@ $$f(x)=w_0 + w_1 x$$
 $$RSS(w_0,w1)≡\sum(y_i-f(x_i))²$$
 - We are just adding the errors² 
 
+In a D-dimensional curve:
+
+$$RSS(w_0,w1)≡\sum(y_i-h(x_i)^T w)² = (y-Hw)^T (y-Hw)$$
+
+
 Finding the best fitting courve means minimizing the RSS (with Matlab could be taking derivatives and job done)
 
 $$\nabla_(w_0,w_1) RSS(w_0,w1)= \begin{pmatrix} -2 \sum_i ^N [y_i - (w_0+_w1 x_i)] \\ -2 \sum_i ^N [y_i - (w_0+_w1 x_i)] x_i \\  \end{pmatrix} = 0$$
+
 - In the 2-d plane made by w_0, w_1, the points minimizing this eq are: $$ŵ_0, ŵ_1$$
+
+In a D-dimensional curve:
+
+$$\nabla RSS(w)= \nabla (y-Hw)^T (y-Hw) = -2H^T(y-Hw)$$
+
+=> algebra & identity properties => $$ŵ=(H^T H)^{-1} H y$$
+
+H invertible <=> N >D (N = number of LD observations, D = number of features). 
+$$H^T H ≈ D^3$$  so, it can be really expensive to compute  and we need to find an alternative => **gradient descent**
 
 
 - And then taking the 2nd derivative to check max/minimum
@@ -41,6 +65,12 @@ $$ + =>  climbing; - =>  descent$$
 
 
 $$ \nabla_w  g(w) = \begin{pmatrix} \delta g / \delta w_0 \\ \delta g / \delta w_1 \\ \delta g / \delta w_2 \\ ... \end{pmatrix}$$
+
+D-dimensional gradient descent:
+
+$$w^(t+1) = w^t  - \eta (-2 \sum _{i=1} ^N h_j (x_i) (y_i - h^T (x_i)w^{(t)}) $$
+
+This well explained in Andrew NG course
 
 When the derivative is positive, we want to decrease *w*, when it's negative, we want to increase it.
 
