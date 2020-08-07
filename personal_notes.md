@@ -92,6 +92,26 @@ $$\epsilon ≡ threshold \cdot to \cdot be \cdot set$$
 
 Gradient descent for multiple regression => find the implementation math
 
+**Compute training error:**
+
+- Define a loss function L(y, f_ŵ (x))
+- Training error  ≡ average loss = $$1/N \sum_{i=1} ^N L (y_i, f_ŵ (x_i)$$ 
+
+- $$RMSE = \sqrt{1/N \sum_{i=1} ^N L (y_i, f_ŵ (x_i))}$$
+
+We'll compute the training error and generalization error(true one)
+
+**Overfitting:**
+- training error (ŵ)  > training error (w')
+- true error (ŵ)  > true error (w')
+ 
+ **Bias:** Difference between the average fit of my model and the true function. Low complexity => High bias
+
+ $$Bias(x)=f_w (true) - f_ŵ (x) $$
+
+**Variance:** How the same fit varies in different datasets. High complexity => High variance, low bias
+
+
  -----------------
 
 
