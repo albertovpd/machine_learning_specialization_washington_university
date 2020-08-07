@@ -111,6 +111,11 @@ We'll compute the training error and generalization error(true one)
 
 **Variance:** How the same fit varies in different datasets. High complexity => High variance, low bias
 
+**MSE** = bias² + variance => the goal is find the global minimum
+
+**bias+noise**. Plotting amount of data VS Error, the error decreases while amout of data increases, but it never converges to zero. It tends to a line parallel to the x axis, so there's no point on computing infinitely. The y-distance between this line and the x axis is the bias+noise
+
+![alt](pics/bias+noise.png)
 
  -----------------
 
