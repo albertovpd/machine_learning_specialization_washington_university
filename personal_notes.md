@@ -1,5 +1,7 @@
 # Personal notes. 
 
+Hi! I like taking notes, and this are quite chaotic ones. One day I'll need to structure it, but that's a job for myself from the future.
+
 *Markdown+Math VSCode extension required*
 
 ## Regression.
@@ -116,6 +118,19 @@ We'll compute the training error and generalization error(true one)
 **bias+noise**. Plotting amount of data VS Error, the error decreases while amout of data increases, but it never converges to zero. It tends to a line parallel to the x axis, so there's no point on computing infinitely. The y-distance between this line and the x axis is the bias+noise
 
 ![alt](pics/bias+noise.png)
+
+![alt](pics/variance.png)
+
+![alt](pics/trainingtestcross.png)
+
+![alt](pics/implementation.png)
+
+- fit on training set
+- select the model complexity (what model performs better, lower validation error) with the validation set
+- assess the performance of that model with the test set
+
+
+
 
  -----------------
 
