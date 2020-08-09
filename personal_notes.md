@@ -130,9 +130,83 @@ We'll compute the training error and generalization error(true one)
 - assess the performance of that model with the test set
 
 
+**Avoiding overfitting. L1 and L2**
+
+A way: 
+
+total cost = measure of fit (the lower RSS the better) + measure of magnitude of coefficients (the fitting curve coefficients tends to be really high when overfitting)
+
+    total cost = RSS(w) + (||w_1||² --OR-- ||w_2||²)
+
+Measure of fit: 
+
+$$RSS = \sum_{i=1} ^N (y_i - ŷ_i (w) )² $$
+
+- N ≡ # of points
+- ŷ_i ≡ predicted value using w
+
+Measure of magnitude of coefficients. There are several ways:
+
+- Sum of absolute value of coefficients (L_1)
+
+$$ sum=\sum_{j=0} ^D |w_j| ≡ ||w_1|| ≡ L_1 \cdot norm$$
+
+- Sum of squares of coefficients ( L_2≡ Rigde Regression)
+
+$$ sum_squares=\sum_{j=0} ^D |w_j ^2| ≡ ||w_2|| ≡ L_2 \cdot norm$$
+
+- We will minimize the function  
+    - λ ≡ tuning parameter
+    - λ << => low bias, high variance
+    - λ >> => low variance, high bias
+
+        
+
+        total cost = RSS(w) + λ ||w_2||²
+
+
+
+
+
+
+ . In Word there are a couple ways of entering the lambda symbol, for example you c
+
+
+
 
 
  -----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Classification.
