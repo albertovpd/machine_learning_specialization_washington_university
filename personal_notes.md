@@ -191,10 +191,23 @@ t ← t+1
 
 $$w^(t+1) = w^t  +2 \eta \sum _{i=1} ^N h_j (x_i) (y_i - h^T (x_i)w^{(t)}) $$
 
+**Not enough data**
 
+![alt](pics/not_enough_data.png)
 
+- Use k-fold cross validation. 
+- Every block randomly assigned. 
+- For each one block we'll use a block as validation set and the rest for training the model, for all blocks.
+- Each block will give us a error_i(λ)
+- Finally, compute the average error.
 
+$$CV(λ)= (1/K ) \sum_{k=1} ^K error_k(λ)$$
 
+- And choose the λ which minimizes CV(λ)
+
+- Formally, the best approximation occurs for validation sets of size 1 (K= N) => *leave-one-out cross validation*. Computationally intensive.
+
+- Typically K=5 (5-fold CV) or 10 (10-fold CV)
 
 
 
