@@ -2,7 +2,7 @@
 
 Hi! I like taking notes, and this are quite chaotic ones. One day I'll need to structure it, but that's a job for myself from the future.
 
-*Markdown+Math VSCode extension required*
+- *Markdown+Math VSCode extension required to properly show  the formulas*
 
 ## Regression.
 
@@ -153,7 +153,7 @@ $$ sum=\sum_{j=0} ^D |w_j| ≡ ||w_1|| ≡ L_1 \cdot norm$$
 
 - Sum of squares of coefficients ( L_2≡ Rigde Regression)
 
-$$ sum_squares=\sum_{j=0} ^D |w_j ^2| ≡ ||w_2|| ≡ L_2 \cdot norm$$
+$$ sum_squares=\sum_{j=0} ^D |w_j ^2| = w_0 ² + w_1 ² +...w_D ² ≡ ||w_2|| ≡ L_2 \cdot norm$$
 
 - We will minimize the function  
     - λ ≡ tuning parameter
@@ -165,11 +165,40 @@ $$ sum_squares=\sum_{j=0} ^D |w_j ^2| ≡ ||w_2|| ≡ L_2 \cdot norm$$
         total cost = RSS(w) + λ ||w_2||²
 
 
+Computing gradient (RSS):
+
+$$\nabla (cost(w)) = \nabla (RSS(w) + λ ||w_2||²)=  -2H^T(y-Hw) +λ 2w =0$$
+
+$$ŵ = (H^T H + λI) H^T y ≡ ŵ^{rigde}$$
+
+Invertible if λ >0 , even if N>D . λI is making the matrix regular, so this is called regularization
+
+Computationally expensive (O(D³)+...)
+
+
+**Gradient descdnt with lambda:**
+
+while ||∇ RSS (w^t)|| > ε:
+
+for j=0... D
+
+ $$δj/ δw = -2 Σ _i=1 ^N h_j (x_i) (y_i - ŷ_i (x^t))$$
+
+ $$w_j ^{t+1}  ← (1 -2 η λ) w_j ^t - ηδj/ δw$$
+
+t ← t+1
+
+
+$$w^(t+1) = w^t  +2 \eta \sum _{i=1} ^N h_j (x_i) (y_i - h^T (x_i)w^{(t)}) $$
 
 
 
 
- . In Word there are a couple ways of entering the lambda symbol, for example you c
+
+
+
+
+
 
 
 
