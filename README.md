@@ -10,22 +10,26 @@ https://www.coursera.org/specializations/machine-learning
 
 - 1st course: General approach.
 
+https://www.coursera.org/account/accomplishments/verify/KFJGVHZHEKUE
+
 ![alt](pics/course1.png)
 
 - 2nd course: Regression
 
+https://coursera.org/share/a20947e43d4346e3b44fcc947f70fc8f
+
+![alt](pics/c2_certification.png)
+
+
 
 -----------------------
 -----------------------
-
-# **Personal notes:**
-
-
 
 # Graphlab
 
-- It seems to work like pandas but storing info in hard drive instead of memory, also it has its own ml algorithms and displaying tools.
+It is kind of a pandas with sk-learn and interactive visualizations, all in once.
 
+I must say the ML work is way easier with GrapLab and TuriCreate. It has a lot of pre-built tools that make life way easier... And that's the plan, reinforce knowledge performing all required processed the hard way, with pandas, sklearn and matplotlib. 
 
 ![alt](pics/graphlab.png " ")
 ![alt](pics/graphlab2.png " ")
