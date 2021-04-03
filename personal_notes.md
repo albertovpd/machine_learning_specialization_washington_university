@@ -4,7 +4,7 @@ Hi! I like taking notes, and this are quite chaotic ones. One day I'll need to s
 
 - *Markdown+Math VSCode extension required to properly show  the formulas*
 
-## Regression.
+# Regression.
 
 Check out Andrew NG notes.
 
@@ -209,47 +209,7 @@ $$CV(λ)= (1/K ) \sum_{k=1} ^K error_k(λ)$$
 
 - Typically K=5 (5-fold CV) or 10 (10-fold CV)
 
-
-
-
-
-
-
-
-
  -----------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Classification.
 
@@ -272,7 +232,7 @@ $$CV(λ)= (1/K ) \sum_{k=1} ^K error_k(λ)$$
 Another: When you know specifically the number of items you have to recoomend, then use it at k==items you have.
 
 
-# Classification error and accuracy (my way)
+## Classification error and accuracy (my way)
 
 - error = (# of mistakes) / (total #) = 1 - accuracy ; error € [0,1], the lowest the better.
 
@@ -375,13 +335,13 @@ Is the average of the square difference between the Original Values and the Pred
 https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-models-part-1-a99d7d7414e4
 
 
-# Bias
+## Bias
 
 ![alt](pics/bias.png)
 - Models with less bias tend to need more data to perform well, but do better with sufficient data.
 
 
-# NN basics
+## NN basics
 
 - NN basic
 ![alt](pics/nn_basics1.png)
@@ -393,3 +353,14 @@ https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-model
 ![alt](pics/nn3.png)
 ![alt](pics/nn4.png)
 ![alt](pics/nn5.png)
+
+
+----------------------
+----------------------
+
+
+# Classification course.
+
+![alt](pics/classification_overview.png)
+
+- Stochastic gradient performs better when massive data.
